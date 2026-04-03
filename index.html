@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movies List</title>
+
+<style>
+:root {
+    --bg: #0f1115;
+    --card: #171a21;
+    --text: #e6e6e6;
+    --muted: #9aa0a6;
+    --accent: #4da3ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* Layout */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 32px 20px;
+}
+
+/* Header */
+.header {
+    margin-bottom: 32px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Info block */
+.info {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 32px;
+}
+
+.info p {
+    margin-bottom: 10px;
+    color: var(--muted);
+}
+
+.info a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+/* Movie list */
+.movie {
+    padding: 16px 0;
+    border-bottom: 1px solid #222;
+}
+
+.movie:last-child {
+    border-bottom: none;
+}
+
+.title-main {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.title-sub {
+    font-size: 14px;
+    color: var(--muted);
+    margin-top: 4px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">MovieList</div>
+    </div>
+
+    <!-- Info -->
+    <div class="info">
+        <p>Список фільмів з різними назвами (EN / JP / UA).</p>
+        <p>
+            Telegram бот: 
+            <a href="#">@your_bot</a>
+        </p>
+    </div>
+
+    <!-- Movies -->
+    <div class="movies">
+
+        <div class="movie">
+            <div class="title-main">Spirited Away</div>
+            <div class="title-sub">千と千尋の神隠し • Віднесені привидами</div>
+        </div>
+
+        <div class="movie">
+            <div class="title-main">Your Name</div>
+            <div class="title-sub">君の名は • Твоє ім'я</div>
+        </div>
+
+        <div class="movie">
+            <div class="title-main">Parasite</div>
+            <div class="title-sub">기생충 • Паразити</div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
