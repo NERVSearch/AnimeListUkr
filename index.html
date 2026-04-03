@@ -39,6 +39,35 @@ body {
     margin-bottom: 32px;
 }
 
+.header {
+    display: flex;
+    align-items: center;       /* вертикальне вирівнювання */
+    justify-content: space-between; /* розносить ліво/право */
+    gap: 16px;
+}
+
+/* Ліва частина */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+/* Права частина */
+.header-right {
+    text-align: right;
+}
+
+/* Текст */
+.title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #9aa0a6;
+}
+
 .logo {
     font-size: 24px;
     font-weight: 600;
@@ -96,17 +125,18 @@ body {
 
     <!-- Header -->
     <div class="header">
-        <img src="nerv-logo.png" alt="NERV Search - пошуковий аніме-бот" class="logo-img" width="200" height="200">
-        <div class="logo">NERV Search</div>
+        <div class="header-left">
+            <img src="nerv-logo.png" alt="NERV Search - пошуковий аніме-бот" class="logo-img" width="200" height="200">
+        </div>
+
+        <div class="header-right">
+            <div class="title">NERV Search</div>
+            <div class="subtitle">Пошукова система для аніме українською мовою у вигляді телеграм-бота: <a href="https://t.me/NERV_search_bot">NERV_search_bot</a></div>
+        </div>
     </div>
 
     <!-- Info -->
     <div class="info">
-        <p>NERV Search - це пошукова система для аніме українською мовою у вигляді телеграм-бота</p>
-        <p>
-            Telegram бот: 
-            <a href="https://t.me/NERV_search_bot">NERV_search_bot</a>
-        </p>
         <p>
             Сам бот не видає відео, проте видає посилання на перегляд шукаючи тайтл зразу у всіх місцях по всім можливим назвам аніме враховуючи назви всіх команд озвучки та субтитрів.
         </p>
