@@ -45,6 +45,28 @@ body {
     margin-bottom: 32px;
 }
 
+.big-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #4da3ff;
+}
+
+.big-link .text {
+    font-size: 16px;
+}
+
+.big-link .arrow {
+    font-size: 28px; /* великі стрілки */
+    line-height: 1;
+}
+
+/* hover */
+.big-link:hover {
+    opacity: 0.85;
+}
+
 a {
     color: var(--accent);
     text-decoration: none;
@@ -142,7 +164,13 @@ a:hover {
 
         <div class="header-right">
             <div class="title">NERV Search</div>
-            <div class="subtitle">Пошукова система для аніме українською мовою у вигляді телеграм-бота: <a href="https://t.me/NERV_search_bot">NERV_search_bot</a></div>
+            <div class="subtitle">Пошукова система для аніме українською мовою у вигляді телеграм-бота:
+                <a href="https://t.me/NERV_search_bot" class="big-link">
+                    <span class="arrow">→</span>
+                    <span class="text">NERV_search_bot</span>
+                    <span class="arrow">←</span>
+                </a>
+            </div>
         </div>
     </div>
 
